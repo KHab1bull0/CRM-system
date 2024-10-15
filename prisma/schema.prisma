@@ -71,13 +71,13 @@ model Service {
 // Xodimlar
 model Employee {
   id        Int      @id @default(autoincrement())
-  firstName String
-  lastName  String
+  firstName String?
+  lastName  String?
   email     String   @unique
-  phone     String
-  position  String
-  salary    Float
-  hireDate  DateTime
+  phone     String?
+  position  String?
+  salary    Float?
+  hireDate  DateTime?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
